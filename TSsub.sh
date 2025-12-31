@@ -46,7 +46,7 @@ multicastSub () {
 			jq --arg name "$NAME" --arg arc "$ARC" --arg source "$SOURCE" '. += { 
 				"channel_name": $name,
 				"arc": $arc,
-				"source_ssm": $source }' <<<"$cue" > /dev/udp/172.20.32.233/5100
+				"source_ssm": $source }' <<<"$cue" > /dev/udp/xxx.xxx.xxx.xxx/<PORT>
 			done < <(
 			tsp -I ip --receive-timeout 86400000 $2@$3 -P filter -p $4 -P continuity -f --no-replicate-duplicated -p $4 -P splicemonitor -a --json-line='ServiceName' -s $4 -O drop 2>&1 | sed 's/^[^{]*{/{/g'
 			) &  
