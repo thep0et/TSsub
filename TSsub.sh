@@ -4,7 +4,7 @@
 #       Author:  Dan Dennis         #
 #               V.1.1               #
 #===================================#
-##script should be executed with the following positional arguments CHE for WA and GIL for EA
+##script can be executed with positional agruments for various channel groupings
 ##	EXAMPLE
 ##	/mnt/isilon/INSIGHT/SCRIPTS/bin/TSsub.sh CHE  
 ##		or
